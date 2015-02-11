@@ -1,0 +1,31 @@
+<h1>Listing trust_me_nots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Notes</th>
+      <th>Due</th>
+      <th>Done</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trust_me_nots.each do |trust_me_not| %>
+      <tr>
+        <td><%= trust_me_not.title %></td>
+        <td><%= trust_me_not.notes %></td>
+        <td><%= trust_me_not.due %></td>
+        <td><%= trust_me_not.done %></td>
+        <td><%= link_to 'Show', trust_me_not %></td>
+        <td><%= link_to 'Edit', edit_trust_me_not_path(trust_me_not) %></td>
+        <td><%= link_to 'Destroy', trust_me_not, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trust me not', new_trust_me_not_path %>

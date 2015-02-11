@@ -1,0 +1,2 @@
+module TrustMeNotsHelper
+end

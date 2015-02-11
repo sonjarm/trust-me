@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @trust_me_not.title %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @trust_me_not.notes %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @trust_me_not.due %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @trust_me_not.done %>
+</p>
+
+<%= link_to 'Edit', edit_trust_me_not_path(@trust_me_not) %> |
+<%= link_to 'Back', trust_me_nots_path %>
